@@ -1,3 +1,5 @@
+CREATE DATABASE lokaverkefni
+
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     username VARCHAR(50) UNIQUE NOT NULL,
@@ -14,7 +16,7 @@ CREATE TABLE games (
     multiplayer BOOLEAN DEFAULT FALSE,
     price DECIMAL(4,2) NOT NULL,
     crossplay BOOLEAN DEFAULT FALSE,
-    controller_support DEFAULT FALSE
+    controller_support BOOLEAN DEFAULT FALSE
 );
 
 CREATE TABLE payment_informations (
@@ -37,6 +39,16 @@ CREATE TABLE achievements (
 );
 
 CREATE TABLE tags (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE platforms (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE developers (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL
 );
