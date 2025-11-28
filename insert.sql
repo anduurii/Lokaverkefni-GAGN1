@@ -5,6 +5,52 @@ INSERT INTO users (username, email, date_of_birth, creation_date) VALUES
 ('Faker', 'realfaker@gmail.com', '1996-05-07', '2005-11-19'),
 ('Nafen', 'nathannn@gmail.com', '2001-10-17', '2008-02-04');
 
-INSERT INTO games (name, release_date, multiplayer, price, crossplay, controller_support, age_restriction) VALUES
-('Lost Ark', '2002-02-11', TRUE, 0, FALSE, TRUE, 18),
-('NBA 2K26', '2025-09-05', TRUE, 69.99, FALSE, TRUE, 3),
+
+INSERT INTO games (name, release_date, multiplayer, price, crossplay, controller_support, age_restriction, description) VALUES
+('Lost Ark', '2002-02-11', TRUE, 0, FALSE, TRUE, 18, 
+
+'Embark on an odyssey for the Lost Ark in a vast, ' || 
+'vibrant world: explore new lands, seek out lost treasures, ' || 
+'and test yourself in thrilling action combat. ' ||
+'Define your fighting style with your class and advanced class, ' || 
+'and customize your skills, weapons, ' ||
+'and gear to bring your might to bear as you fight against hordes of enemies, colossal bosses, and dark forces ' ||
+'seeking the power of the Ark in this action-packed free-to-play RPG.'
+),
+
+('NBA 2K26', '2025-09-05', TRUE, 69.99, FALSE, TRUE, 3, 
+
+'Bragging rights are on the line in MyCAREER, MyTEAM, MyNBA, The W, and Play Now. ' ||
+'Showcase your bag of moves with hyper realism, Powered by ProPLAY™, ' || 
+'and challenge your friends, or rivals, in NBA 2K26’s competitive modes—' ||
+'and leave no doubt that you wear the crown.'
+),
+
+('Apex Legends', '2020-11-05', TRUE, 0, TRUE, TRUE, 16,
+
+'Apex Legends is the award-winning, ' || 
+'free-to-play Hero Shooter from Respawn Entertainment. ' || 
+'Master an ever-growing roster of legendary characters with powerful abilities, ' || 
+'and experience strategic squad play and innovative gameplay in the next evolution of Hero Shooter and Battle Royale.'
+),
+
+('Counter-Strike 2', '2012-08-21', TRUE, 0, FALSE, FALSE, 17, 
+
+'For over two decades, ' ||
+'Counter-Strike has offered an elite competitive experience, ' ||
+'one shaped by millions of players from across the globe. ' ||
+'And now the next chapter in the CS story is about to begin. ' ||
+'This is Counter-Strike 2.' 
+),
+
+('A Dance of Fire and Ice', '2019-01-25', FALSE, 5.99, FALSE, TRUE, 12,
+
+'A Dance of Fire and Ice is a strict rhythm game. ' ||
+'Keep your focus as you guide two orbiting planets ' || 
+'along a winding path without breaking their perfect equilibrium.' 
+);
+
+INSERT INTO payment_informations
+(first_name, last_name, billing_address, card_number, expiration_date, city, postal_code, country, phone_number ) 
+VALUES
+('Robin', 'Kool', 'Kase 14-3', '8949143297426743', '')

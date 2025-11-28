@@ -16,7 +16,8 @@ CREATE TABLE games (
     multiplayer BOOLEAN DEFAULT FALSE,
     price DECIMAL(4,2) NOT NULL,
     crossplay BOOLEAN DEFAULT FALSE,
-    controller_support BOOLEAN DEFAULT FALSE
+    controller_support BOOLEAN DEFAULT FALSE,
+    age_restriction INT NOT NULL
 );
 
 CREATE TABLE payment_informations (
