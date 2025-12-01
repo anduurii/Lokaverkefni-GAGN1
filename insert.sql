@@ -50,7 +50,52 @@ INSERT INTO games (name, release_date, multiplayer, price, crossplay, controller
 'along a winding path without breaking their perfect equilibrium.' 
 );
 
+
+
 INSERT INTO payment_informations
-(first_name, last_name, billing_address, card_number, expiration_date, city, postal_code, country, phone_number ) 
+(first_name, last_name, billing_address, card_number, expiration_date, city, postal_code, country, phone_number) 
 VALUES
-('Robin', 'Kool', 'Kase 14-3', '8949143297426743', '')
+('Robin', 'Kool', '14-3 Kase', '8949143297426743', '06/27', 'Tartu', '50412', 'Estonia', '99452637'),
+('Phillip', 'Dosen', '742 Pinecrest Avenue', '0239948052075843', '03/29', 'Denver', '80212', 'United States', '5551942'),
+('Lee', 'Sanghyeok', '304-21 Maple-ro', '4293287432984728', '12/26', 'Seoul', '06229', 'South Korea', '1049327815');
+
+
+
+
+INSERT INTO achievements (name, description) VALUES
+('The Grind', 'Play the game for more than 1000+ hours'),
+-- Lost Ark
+('We''re All Buddies!', 'Join a guild'), 
+('A Good Trade', 'Buy a Legendary item from the Wandering Merchant'),
+('Boss Hunter: Expert', 'Defeat Field Bosses: Black Chicking, White Chicking, Batuark, Gorka Grosse, Savnak, Erasmo'),
+-- NBA 2K26
+('Championship Material', 'Win the EBA Championship in Out of Bounds in MyCAREER.'),
+('Full Potential', 'Earn Hall of Fame on a GOAT Skill in MyCAREER.'),
+('Keep Your Distance', 'Make 10 three-point shots in any one game.'),
+-- Apex Legends
+('Apex Legend', 'Win a game with 8 different Legends'),
+('Jumpmaster', 'Be the Jumpmaster 5 times'),
+('Kill Leader', 'Become the Kill Leader'),
+-- CS2
+('A New Beginning', 'This is Counter-Strike, too.'),
+-- A Dance of Fire and Ice
+('World 12 Perfect', 'Get more than 100% accuracy on World 12'),
+('Game 100% Complete', 'Complete 100% of the game'),
+('EX Worlds Complete', 'Finish all EX Worlds of Neo Cosmos');
+
+
+INSERT INTO tags (name) VALUES
+('MMORPG'), ('Action'), ('FPS'), ('Shooter'), ('Battle Royale'), 
+('Rhythm'), ('Music'), ('Sports'), ('Basketball'),
+('Free-To-Play'), ('Multiplayer'), ('Singleplayer');       
+
+INSERT INTO platforms (name) VALUES
+('PC'), ('Playstation'), ('Xbox');
+
+INSERT INTO developers (name) VALUES
+('Smilegate RPG'), -- Lost Ark
+('Visual Concepts'), -- NBA 2K26
+('Respawn'), -- Apex Legends 
+('Valve'), -- Counter-Strike 2
+('7th Beat Games'); -- ADOFAI
+

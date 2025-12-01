@@ -26,7 +26,7 @@ CREATE TABLE payment_informations (
     last_name VARCHAR(255) NOT NULL,
     billing_address VARCHAR(255) NOT NULL,
     card_number VARCHAR(16) NOT NULL,
-    expiration_date DATE NOT NULL,
+    expiration_date VARCHAR(5) NOT NULL,
     city VARCHAR(255) NOT NULL,
     postal_code VARCHAR(12) NOT NULL,
     country VARCHAR(255) NOT NULL,
