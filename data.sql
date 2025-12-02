@@ -1,9 +1,13 @@
+/* Aðaltöflur */
+
+
 INSERT INTO users (username, email, date_of_birth, creation_date) VALUES 
 ('ropzkah', 'ropzkah@gmail.com', '1999-12-22', '2006-07-24'),
 ('ImperialHal', 'imperialhal@gmail.com', '1999-05-31', '2009-09-14'),
 ('Zeus', 'choi_wooje@gmail.com', '2004-01-31', '2012-06-03'),
 ('Faker', 'realfaker@gmail.com', '1996-05-07', '2005-11-19'),
 ('Nafen', 'nathannn@gmail.com', '2001-10-17', '2008-02-04');
+
 
 
 INSERT INTO games (name, release_date, multiplayer, price, crossplay, controller_support, age_restriction, description) VALUES
@@ -61,7 +65,6 @@ VALUES
 
 
 
-
 INSERT INTO achievements (name, description) VALUES
 ('The Grind', 'Play the game for more than 1000+ hours'),
 -- Lost Ark
@@ -84,13 +87,18 @@ INSERT INTO achievements (name, description) VALUES
 ('EX Worlds Complete', 'Finish all EX Worlds of Neo Cosmos');
 
 
+
 INSERT INTO tags (name) VALUES
 ('MMORPG'), ('Action'), ('FPS'), ('Shooter'), ('Battle Royale'), 
 ('Rhythm'), ('Music'), ('Sports'), ('Basketball'),
 ('Free-To-Play'), ('Multiplayer'), ('Singleplayer');       
 
+
+
 INSERT INTO platforms (name) VALUES
 ('PC'), ('Playstation'), ('Xbox');
+
+
 
 INSERT INTO developers (name) VALUES
 ('Smilegate RPG'), -- Lost Ark
@@ -98,4 +106,8 @@ INSERT INTO developers (name) VALUES
 ('Respawn'), -- Apex Legends 
 ('Valve'), -- Counter-Strike 2
 ('7th Beat Games'); -- ADOFAI
+
+
+
+/* Tengi töflur */
 

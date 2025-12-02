@@ -1,1 +1,26 @@
-DROP TABLE payment_informations;
+-- Drop all tables in reverse order of dependencies
+DROP TABLE IF EXISTS purchases CASCADE;
+DROP TABLE IF EXISTS games_developers CASCADE;
+DROP TABLE IF EXISTS games_achievements CASCADE;
+DROP TABLE IF EXISTS games_platforms CASCADE;
+DROP TABLE IF EXISTS games_tags CASCADE;
+DROP TABLE IF EXISTS users_payment_informations CASCADE;
+DROP TABLE IF EXISTS users_achievements CASCADE;
+DROP TABLE IF EXISTS libraries CASCADE;
+DROP TABLE IF EXISTS developers CASCADE;
+DROP TABLE IF EXISTS platforms CASCADE;
+DROP TABLE IF EXISTS tags CASCADE;
+DROP TABLE IF EXISTS achievements CASCADE;
+DROP TABLE IF EXISTS payment_informations CASCADE;
+DROP TABLE IF EXISTS games CASCADE;
+DROP TABLE IF EXISTS users CASCADE;
+
+-- Reset all serial sequences
+ALTER SEQUENCE users_id_seq RESTART WITH 1;
+ALTER SEQUENCE games_id_seq RESTART WITH 1;
+ALTER SEQUENCE payment_informations_id_seq RESTART WITH 1;
+ALTER SEQUENCE achievements_id_seq RESTART WITH 1;
+ALTER SEQUENCE tags_id_seq RESTART WITH 1;
+ALTER SEQUENCE platforms_id_seq RESTART WITH 1;
+ALTER SEQUENCE developers_id_seq RESTART WITH 1;
+ALTER SEQUENCE purchases_id_seq RESTART WITH 1;
