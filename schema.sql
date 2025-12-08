@@ -20,6 +20,7 @@ CREATE TABLE games (
     age_restriction INT NOT NULL
 );
 
+
 CREATE TABLE payment_informations (
     id SERIAL PRIMARY KEY,
     first_name VARCHAR(255) NOT NULL,
