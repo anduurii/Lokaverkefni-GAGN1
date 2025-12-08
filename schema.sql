@@ -42,25 +42,25 @@ CREATE TABLE achievements (
 
 CREATE TABLE tags (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(255) NOT NULL
+    name VARCHAR(255) UNIQUE NOT NULL
 );
 
 CREATE TABLE platforms (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(255) NOT NULL
+    name VARCHAR(255) UNIQUE NOT NULL
 );
 
 CREATE TABLE developers (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(255) NOT NULL
+    name VARCHAR(255) UNIQUE NOT NULL
 );
 
 /* Tengi töflur */
 
 CREATE TABLE libraries (
     user_id INT NOT NULL,
-    game_id INT,
-    playtime INT,
+    game_id INT NOT NULL,
+    playtime INT DEFAULT 0,
 
     CONSTRAINT fk_user
         FOREIGN KEY (user_id)
@@ -101,7 +101,7 @@ CREATE TABLE users_payment_informations (
     CONSTRAINT fk_payment_information
         FOREIGN KEY (payment_information_id)
         REFERENCES payment_informations(id)
-        ON DELETE CASCADE
+
 );
 
 CREATE TABLE games_tags (

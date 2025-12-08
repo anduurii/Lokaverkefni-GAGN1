@@ -107,9 +107,6 @@ INSERT INTO developers (name) VALUES
 ('7th Beat Games'); -- ADOFAI
 
 
-/* ropz 1,          Hal 2,      Zeus 3,     Faker 4,        Nafen 5 */
-/* lost ark 1,       2k26 2,      apex 3,      cs2 4,   adofai 5 */
-
 /* Tengi töflur */
 
 INSERT INTO libraries (user_id, game_id, playtime) VALUES
@@ -138,8 +135,8 @@ INSERT INTO games_tags (game_id, tag_id) VALUES
 (1, 1), (1, 2), (1, 10), (1, 11),
 (2, 8), (2, 9), (2, 11),
 (3, 2), (3, 3), (3, 4), (3, 5), (3, 10), (3, 11),
-(4, 2), (4, 3), (4, 4), (4, 11),
-(5, 6), (5, 7), (5, 11);
+(4, 2), (4, 3), (4, 4), (4, 10), (4, 11),
+(5, 6), (5, 7), (5, 12);
 
 
 INSERT INTO games_platforms (game_id, platform_id) VALUES
