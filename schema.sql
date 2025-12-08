@@ -169,7 +169,7 @@ CREATE TABLE purchases (
     id SERIAL PRIMARY KEY,
     user_id INT NOT NULL,
     game_id INT NOT NULL,
-    payment_information_id INT NOT NULL,
+    payment_information_id INT,
     purchase_date DATE DEFAULT CURRENT_DATE,
 
     CONSTRAINT fk_user

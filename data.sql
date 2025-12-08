@@ -94,7 +94,6 @@ INSERT INTO tags (name) VALUES
 ('Free-To-Play'), ('Multiplayer'), ('Singleplayer');       
 
 
-
 INSERT INTO platforms (name) VALUES
 ('PC'), ('Playstation'), ('Xbox');
 
@@ -108,6 +107,66 @@ INSERT INTO developers (name) VALUES
 ('7th Beat Games'); -- ADOFAI
 
 
+/* ropz 1,          Hal 2,      Zeus 3,     Faker 4,        Nafen 5 */
+/* lost ark 1,       2k26 2,      apex 3,      cs2 4,   adofai 5 */
 
 /* Tengi töflur */
+
+INSERT INTO libraries (user_id, game_id, playtime) VALUES
+(1, 3, 700), (1, 4, 3000), (1, 5, 300),
+(2, 1, 800), (2, 3, 3000), (2, 4, 500),
+(3, 1, 800), (3, 2, 700), (3, 3, 500), (3, 5, 600),
+(4, 1, 1000), (4, 5, 1500),
+(5, 1, 1500), (5, 2, 600), (5, 3, 2000), (5, 4, 1000);
+
+
+INSERT INTO users_achievements (user_id, achievement_id) VALUES
+(1, 1), (1, 8), (1, 9), (1, 10), (1, 11), (1, 12),
+(2, 1), (2, 2), (2, 3), (2, 8), (2, 9), (2, 10), (2, 11),
+(3, 1), (3, 2), (3, 3), (3, 4), (3, 5), (3, 7), (3, 9), (3, 10), (3, 12), (3, 14),
+(4, 1), (4, 2), (4, 3), (4, 4), (4, 11), (4, 12), (4, 13),
+(5, 1), (5, 2), (5, 3), (5, 4), (5, 6), (5, 7), (5, 8), (5, 9), (5, 10), (5, 11);
+
+
+
+INSERT INTO users_payment_informations (user_id, payment_information_id) VALUES
+(1, 1),
+(2, 2),
+(4, 3);
+
+INSERT INTO games_tags (game_id, tag_id) VALUES
+(1, 1), (1, 2), (1, 10), (1, 11),
+(2, 8), (2, 9), (2, 11),
+(3, 2), (3, 3), (3, 4), (3, 5), (3, 10), (3, 11),
+(4, 2), (4, 3), (4, 4), (4, 11),
+(5, 6), (5, 7), (5, 11);
+
+
+INSERT INTO games_platforms (game_id, platform_id) VALUES
+(1, 1),
+(2, 1), (2, 2), (2, 3),
+(3, 1), (3, 2), (3, 3),
+(4, 1),
+(5, 1);
+
+INSERT INTO games_achievements (game_id, achievement_id) VALUES
+(1, 2), (1, 3), (1, 4), (1, 1),
+(2, 5), (2, 6), (2, 7), (2, 1),
+(3, 8), (3, 9), (3, 10), (3, 1),
+(4, 11), (4, 1),
+(5, 12), (5, 13), (5, 14), (5, 1);
+
+INSERT INTO games_developers (game_id, developer_id) VALUES
+(1, 1),
+(2, 2),
+(3, 3),
+(4, 4),
+(5, 5);
+
+INSERT INTO purchases (user_id, game_id, payment_information_id) VALUES
+(1, 4, 1), (1, 5, 1),
+(2, 4, 2),
+(3, 2, NULL), (3, 5, NULL),
+(4, 5, 3),
+(5, 2, NULL), (5, 4, NULL);
 
