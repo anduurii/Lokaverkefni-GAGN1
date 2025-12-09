@@ -166,4 +166,3 @@ INSERT INTO purchases (user_id, game_id, payment_information_id) VALUES
 (3, 2, NULL), (3, 5, NULL),
 (4, 5, 3),
 (5, 2, NULL), (5, 4, NULL);
-
